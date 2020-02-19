@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="binding"
+            type="com.example.rxsample.rxjavaprogramingbook.chapter6.recyclerview.AppListActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".rxjavaprogramingbook.chapter6.recyclerview.AppListActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/appList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:item="@{binding.appList}"/>
+
+    </RelativeLayout>
+
+</layout>
